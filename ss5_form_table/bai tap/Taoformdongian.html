@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taoformdongian</title>
+    <style>
+        label {
+            text-align: right;
+        }
+
+        body {
+            font-family: "Courier New";
+        }
+
+        h1 {
+            background: orangered;
+            text-align: center;
+            color: white;
+        }
+
+        .block-parent {
+            padding-top: 8px;
+            padding-bottom: 30px;
+            padding-left: 16px;
+            padding-right: 16px;
+            background: aquamarine;
+        }
+        .block-children {
+            background: white;
+            padding-top: 1px;
+            padding-bottom: 6px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        span {
+            width: 100px;
+            display: inline-block;
+            text-align: end;
+            color: blue;
+        }
+
+        .block-nhan {
+            color: orange;
+            padding-left: 95px;
+        }
+
+        .block-nhan1 {
+            color: orange;
+            padding-left: 95px;
+        }
+
+        .block-nhan2 {
+            color: orange;
+            padding-left: 95px;
+        }
+    </style>
+</head>
+<body>
+<div class="block-parent">
+    <div class="block-children"><h1>SỞ THÍCH CỦA BẠN</h1>
+        <form>
+            <span>Họ và tên:</span><input type="text" name="yourname" value="" placeholder="Nhập họ và tên"><br/>
+            <span>Email:</span><input type="text" name="email" value="" placeholder="abc123@gmail.com"><br/>
+            <span>Sở thích:</span>
+            <div class="block-nhan"><label><input type="checkbox" name="hobby" value="sport"/>Thể thao</label>
+                <label><input type="checkbox" name="hobby" value="music"/>Âm nhạc</label>
+                <label><input type="checkbox" name="hobby" value="readABook"/>Đọc sách</label></div>
+            <br/>
+            <div class="block-nhan1"><label><input type="checkbox" name="hobby" value="surfTheWed"/>Lướt wed</label>
+                <label><input type="checkbox" name="hobby" value="playGames"/>Chơi game</label>
+                <label><input type="checkbox" name="hobby" value="film"/>Điện ảnh</label></div>
+            <br/>
+            <div class="block-nhan2"><label><input type="checkbox" name="hobby" value="travel"/>Du lịch</label></div>
+            <br/>
+            <input type="submit" value="Gửi thông tin"/> <input type="reset" value="Nhập lại"/>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
