@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <form action="">
+        <tr>
+            <th><label for="st">Amount</label><br/>
+                <input type="number" name="number" value="1" id="st">
+            </th>
+            <th><label for="tv">FromCurrency</label><br/>
+                <select id="tv">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </th>
+            <th><label for="tm">To Currency</label><br/>
+                <select id="tm">
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </th>
+            <td>
+                <input style="font-weight: bold" ; type="button" onclick="convert()" value="Convert">
+            </td>
+        </tr>
+    </form>
+</table>
+<span style="color: blue">Result:</span><span style="color: blue" id="kQ"></span>
+<script>
+    function convert() {
+        let inputst = document.getElementById('st').value;
+        let tv = document.getElementById('tv').value;
+        let tm = document.getElementById('tm').value;
+
+        if (tv == tm) {
+            document.getElementById('kQ').innerHTML = inputst;
+        }
+
+        if (tv === 'VND' && tm === 'USD') {
+            let result = inputst / 23000;
+                document.getElementById('kQ').innerHTML = ' ' + result + ' USD';
+        }
+        if (tv === 'USD' && tm === 'VND') {
+            let result = inputst * 23000;
+            document.getElementById('kQ').innerHTML = ' ' + result + ' VND';
+        }
+    }
+</script>
+</body>
+</html>
