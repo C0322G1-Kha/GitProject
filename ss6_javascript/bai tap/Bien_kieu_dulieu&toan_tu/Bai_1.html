@@ -6,11 +6,13 @@
 </head>
 <body>
 <script>
-    let scoreLy= prompt("Nhập điểm Vật lý ");
-    let scoreHoa= prompt("Nhập điểm Hóa học");
-    let scoreSinh= prompt(" Nhập điểm Sinh học");
-    let ScoreTB=
-
+    let scvl = parseInt(prompt("Nhập điểm Vật lý "));
+    let schh = parseInt(prompt("Nhập điểm Hóa học"));
+    let scsh = parseInt(prompt("Nhập điểm Sinh học"));
+    scT = scvl + schh + scsh;
+    scTB = scT / 3;
+    alert("Tổng điểm " + scT);
+    alert("Trung bình điểm " + scTB);
 </script>
 </body>
 </html>
