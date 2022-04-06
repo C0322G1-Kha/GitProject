@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+<h1>Caculator</h1>
+<table>
 
+    <tr>
+        <input type="number" name="number" value="12" id="ia">&nbsp;
+        <input type="number" name="number" value="12" id="ib">
+    </tr>
+    <br/>
+    <tr>
+        <input type="button" value="Addition(+)" onclick="ketQua('cong')">
+        <input type="button" value="Subtraction(-)" onclick="ketQua('tru')">
+        <input type="button" value="Multiplication(x)" onclick="ketQua('nhan')">
+        <input type="button" value="Division(/)" onclick="ketQua('chia')">
+    </tr>
+    <br/>
+    <span>Result Devision:</span>&nbsp<span id="kQ"</span>
+</table>
+<script>
+    function ketQua(i) {
+        let ia = parseInt(document.getElementById('ia').value);
+        let ib = parseInt(document.getElementById('ib').value);
+        if (i === 'cong') {
+            document.getElementById('kQ').innerHTML = ia + ib;
+        } else if (i === 'tru') {
+            document.getElementById('kQ').innerHTML = ia - ib;
+        } else if (i === 'nhan') {
+            document.getElementById('kQ').innerHTML = ia * ib;
+        } else if (i === 'chia') {
+            document.getElementById('kQ').innerHTML = ia / ib;
+        }
+    }
+</script>
 </body>
 </html>
