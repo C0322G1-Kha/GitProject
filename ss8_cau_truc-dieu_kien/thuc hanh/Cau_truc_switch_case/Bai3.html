@@ -7,10 +7,21 @@
 <body>
 <script>
     let value = prompt('Type a number', 0);
-    switch (value)
-    {
-        case ""
-
+    let a = value > 0;
+    switch (a) {
+        case true:
+            document.write(1);
+            break;
+        case false:
+            let b = value == 0;
+            switch (b) {
+                case true:
+                    document.write(0);
+                    break;
+                case false:
+                    document.write(-1);
+                    break;
+            }
     }
 </script>
 </body>
