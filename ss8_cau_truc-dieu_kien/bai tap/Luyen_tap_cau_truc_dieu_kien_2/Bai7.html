@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt('nhập a'));
+    let b= parseInt(prompt('nhập b'));
+    let c= parseInt(prompt('nhập c'));
+    let result1= ( b*b) - (4*b*c);
+    let result2= - (c/b);
+        if (a==0){
+            if (b==0){
+                if (c==0){
+                    alert('Phương trình vô số nghiệm');
+                }
+                else {
+                    alert('Phương trình vô nghiệm');
+                }
+            }else {'Phương trình có nghiệm là' + result2};
+        } else {
+            if (result1 < 0) {
+                alert(' Phương trình vô nghiệm');
+            } else if (result1 == 0){
+                alert(' Phương trình có nghiệm kép x1=x2=  '+ -(b / (2*a)));
+            } else if (result1 > 0) {
+            alert("Phương trình có 2 nghiệm: "+" x1= "+(-b+ Math.sqrt(result1))/(2*a) + " x2= "+(-b- Math.sqrt(result1))/(2*a) );}
+        }
+</script>
+</body>
+</html>

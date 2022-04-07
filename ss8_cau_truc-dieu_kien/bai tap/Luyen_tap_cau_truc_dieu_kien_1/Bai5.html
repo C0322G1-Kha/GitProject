@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let a = parseFloat(prompt("Nhập điểm kiểm tra"));
+let b = parseFloat(prompt("Nhập điểm giữa kì"));
+let c = parseFloat(prompt("Nhập điểm cuối kì"));
+let d = ( a + b * 2 + c * 3 ) / 6 ;
+if ( 8 < d && d < 10) {
+    document.write( d + ' ' + 'Học sinh giỏi');
+} else if ( 6 < d && d < 8) {
+    document.write( d + ' ' + 'Học sinh khá');
+} else if ( 3 < d && d < 6) {
+    document.write( d + ' ' + 'Học sinh trung bình');
+} else if ( 0 < d && d < 3){
+    document.write(d + ' ' + 'Học sinh yếu');
+}
+</script>
+</body>
+</html>
