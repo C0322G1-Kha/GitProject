@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> TÍNH LÃI NGÂN HÀNG</h1>
+<input type="number" id="money" name="deposits" value="deposits" placeholder="Số tiền đã gửi"/><br/>
+<input type="number" id="rate" name="interestRate" value="interestRate" placeholder="Lãi suất tháng"/><br/>
+<input type="number" id="month" name="month" value="month" placeholder="Số tháng gửi"/><br/>
+<input type="button" onclick="countRate()" value="Tính lãi nhận được hằng tháng"/>
+<p id="result">Lãi suất </p>
+<script>
+    function countRate() {
+        let money = parseInt(document.getElementById("money").value);
+        let rate = parseInt(document.getElementById("rate").value);
+        let month = parseFloat(document.getElementById("month").value);
+if (money > 0 && rate > 0 && month > 0){
+    let a = money * rate / 100;
+    document.getElementById("result").innerText = "Số tiền lãi nhận được là:" + "" + a + "" + "VNĐ";
+} else
+    alert("Vui lòng nhập lại (Số tiền gửi, Lãi suất tháng, Số tháng gửi không được nhỏ hơn hoặc bằng 0");
+    }
+</script>
+</body>
+</html>
