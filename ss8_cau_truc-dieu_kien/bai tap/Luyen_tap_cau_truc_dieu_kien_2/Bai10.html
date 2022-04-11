@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Giá điện trên 1kWh là 3000VNĐ</p>
+<script>
+    const price = 3000;
+    let w = parseInt(prompt('Nhập số lượng điện đã tiêu thụ tháng này(kWh):'));
+    let g = w * price;
+    if (w > 0) {
+        alert('Số tiền phải trả là:' + g + '' + 'VNĐ');
+    } else
+    {
+        alert('Nhập sai');
+    }
+</script>
+</body>
+</html>

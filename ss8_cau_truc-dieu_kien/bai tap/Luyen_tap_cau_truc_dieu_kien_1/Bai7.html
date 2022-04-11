@@ -5,11 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+<input type="number" id="mDialed" value="minutesDialed" placeholder="Số phút"/>
+<input type="button" onclick="count()" value="Tính"/>
+<p>Cước cố định hằng tháng là 40,000 VNĐ</p>
+<span id="result"></span>
 <script>
-    let a = parseInt(prompt('sô phút đã gọi'));
-    let b = 0 ;
-    if (a > 50){
-        alert()
+    const CUOC = 40000;
+    function count() {
+        let m = parseInt(document.getElementById("mDialed").value);
+        if (m < 61) {
+            document.getElementById("result").innerHTML = "Cước điện thoại tháng này là" + (CUOC + 60 * 1000) + "" + "VND";
+        } else if (m < 121) {
+            document.getElementById("result").innerHTML = "Cước điện thoaị tháng này là" + (CUOC + 120 * 1000 + (m - 60) * 800) + "" + "VND";
+        } else if (m < 241) {
+            document.getElementById("result").innerHTML = "Cước điện thoại tháng này là" + (CUOC + 240 * 1000 + (m - 120) + "" + "VND");
+        } else
+        {
+            document.getElementById("result").innerHTML = "Cước điện thoại tháng này là" + (CUOC + 60 * 1000 + 120 * 1000 + (m - 240) * 1000) + "" + "VND";
+        }
     }
 </script>
 </body>

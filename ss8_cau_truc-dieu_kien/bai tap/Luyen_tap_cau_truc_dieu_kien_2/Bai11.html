@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
+<p>Thu nhập hằng tháng:</p>
+<input type="number" name="salary" value="salary" id="sA" placeholder="Thu nhập tháng"/><br/>
+<p>Số tiền đóng bảo hiểm:</p><input type="number" name="premiumSalary" value="premiumSalary" id="pS"
+                                     placeholder="Đóng bảo hiểm bắt buộc"/><br/>
+<p>Số người phụ thuộc:</p><input type="number" name="numberOfDependents" value="numberOfDependents" id="nOD"
+                                     placeholder="Số người phụ thuộc"/><br/>
+<h1>
+    <button onclick="taxSalary()">Tính thu nhập tính thuế</button>
+</h1>
+<p id="compulsoryInsurance">Bảo hiểm bắt buộc = Thu nhập tháng x(8% + 1.5% + 1%): BHXH (8% thu nhập tháng) , BHYT (1.5% thu nhập tháng) , BHTN (1%
+    thu nhập tháng)</p>
+<p>Giảm trừ bản thân là 11,000,000VNĐ</p>
+<p id="dependentDeduction">Giảm trừ người phụ thuộc (1 người 4400000VNĐ)</p>
+<p id="taxSalary">Thu nhập tính thuế (Thu nhập tháng - Các khoản giảm trừ(Giảm trừ bản thân, Các khoản
+    bảo hiểm bắt buộc, Giảm trừ người phụ thuộc) </p>
+<p id="result"></p>
+</body>
+<script>
+    function taxSalary() {
+        let salary = parseFloat(document.getElementById("sA").value);
+        let premiumSalary = parseFloat(document.getElementById("pS").value);
+        let numberOfDependents = parseInt(document.getElementById("nOD").value);
+        let taxSalary = salary - (premiumSalary * 8 + premiumSalary * 1.5 + premiumSalary * 1) / 100 - (numberOfDependents * 4400000) - 11000000;
+        document.getElementById("compulsoryInsurance").innerText = "Bảo hiểm bắt buộc:" + ((premiumSalary * 8 + premiumSalary * 1.5 + premiumSalary * 1) / 100) + "VNĐ";
+        document.getElementById("dependentDeduction").innerText = "Giảm trừ người phụ thuộc:" + (numberOfDependents * 4400000) + "VNĐ";
+        document.getElementById("taxSalary").innerText = "Thu nhập tính thuế" + taxSalary + "VNĐ";
+        if (taxSalary <= 0) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là:" + (taxSalary * 0) + "VNĐ";
+        } else if (taxSalary <= 5000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là:" + (taxSalary * 5) / 100 + "VNĐ";
+        } else if (taxSalary <= 10000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là:" + (taxSalary * 10) / 100 - 250000 + "VNĐ";
+        } else if (taxSalary <= 18000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là:" + (taxSalary * 15) / 100 - 750000 + "VNĐ";
+        } else if (taxSalary <= 32000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là" + (taxSalary * 20) / 100 - 1650000 + "VNĐ";
+        } else if (taxSalary <= 52000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là" + (taxSalary * 25) / 100 - 3250000 + "VNĐ";
+        } else if (taxSalary < 80000000) {
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là" + (taxSalary * 30) / 100 - 5850000 + "VNĐ";
+        } else
+            document.getElementById("result").innerText = "Thuế thu nhập phải đóng là" + (taxSalary * 35) / 100 - 9850000 + "VNĐ";
+    }
+</script>
+</html>
