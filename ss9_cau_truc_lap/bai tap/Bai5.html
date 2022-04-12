@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c;
+    let n = parseInt(prompt("nhập số fionaci muốn hiển thị"));
+    let num= 0;
+    for (let i = 0; i < n ; i ++){
+        document.write( a + "<br>");
+        num = num + a;
+        c = a + b;
+        a = b;
+        b = c;
+    } document.write("Tổng " + n + " số đầu tiên là: " + num);
+</script>
+</body>
+</html>

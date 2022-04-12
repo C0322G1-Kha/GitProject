@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c;
+    let n = parseInt(prompt("nhập số dãy fionaci muốn hiển thị"));
+    for (let i = 0; i < n ; i++){
+        document.write( a + "<br>");
+        c = a + b;
+        a = b;
+        b = c;
+    }
+</script>
+</body>
+</html>
