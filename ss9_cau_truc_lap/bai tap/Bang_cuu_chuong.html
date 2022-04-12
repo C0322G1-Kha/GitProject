@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "<table border='1' width='100px' cellspacing='0' cellpadding='5'>";
+    for (let i = 1; i < 10; i++) {
+        a += "<tr>";
+        for (let n = 2; n < 10; n++) {
+            a += "<td>" + n + "x" + i + "=" + n * i + "</td>";
+        }a += "<tr>";
+    }
+    a += "</table>";
+    document.write(a);
+
+</script>
+
+</table>
+</body>
+</html>
