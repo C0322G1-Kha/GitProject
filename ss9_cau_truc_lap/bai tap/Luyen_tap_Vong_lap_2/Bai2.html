@@ -6,7 +6,12 @@
 </head>
 <body>
 <script>
-    
+    let a = parseInt(prompt("Nhập số nguyên dương"));
+    let factorials = 1;
+    for (let i = a; i > 0; i--) {
+        factorials *= i;
+    }
+    document.write("Giai thừa là: " + a + "!" +  "=" + factorials);
 </script>
 </body>
 </html>
