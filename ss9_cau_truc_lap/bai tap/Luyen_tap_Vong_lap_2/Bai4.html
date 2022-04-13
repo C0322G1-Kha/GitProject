@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a = parseInt(prompt("Nhập chiều dài hình chữ nhật:"));
+    let b = parseInt(prompt("Nhập chiều rộng hình chữ nhật:"));
+    for (let i = 1; i <= b; i++) {
+        for (let j = 1; j <= a; j++) {
+            if (i > 1 && i < b && j > 1 && j < a) {
+                document.write("&nbsp;&nbsp");
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
 </body>
 </html>
