@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button style="width:50px;height:50px" value="play" onclick="xyz()" ;>Play</button>
+<script>
+    function xyz() {
+        let a = parseInt(prompt("Số đầu tiên là "));
+        let b = parseInt(prompt("Số cuối cùng là "));
+        let c = parseInt(prompt("Số lần đoán là "));
+        let x = Math.floor(Math.random() * (b - a + 1)) + a;
+        let i = 0;
+        do {
+            let z = parseInt(prompt("Đoán đê"));
+            if (z > b || z < a) {
+                alert("Vui lòng nhập trong khoảng " + a + " đến " + b);
+            } else if (z > x) {
+                alert("Số bạn nhập vào lớn hơn");
+            } else if (z < x) {
+                alert("Số bạn nhập vào bé hơn");
+            } else {
+                alert("BINGO!");
+                break;
+            }
+            i++;
+        } while (i < c);
+        if (i === c) {
+            alert("Bạn đã nhập hết số lần đoán. LOSE");
+        }
+    }
+</script>
+</body>
+</html>
