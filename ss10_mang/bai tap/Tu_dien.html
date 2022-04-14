@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="search" placeholder="Nhập vào thứ trong tuần "/>
+<input type="button" onclick="searchh()" value="Tìm"/>
+<script>
+    let anh = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+    let viet = ["thứ hai", "thứ ba", "thứ 4", "thứ 5", "thứ 6", "thứ bảy", "chủ nhật"];
+
+    function searchh() {
+        for (let i = 0; i < anh.length; i++) {
+            let a = document.getElementById("search").value;
+            if (a === anh[i]) {
+                alert(viet[i]);
+            }
+        }
+    }
+    if (a != anh) {
+        alert("Không tìm thấy");
+    }
+</script>
+</body>
+</html>
