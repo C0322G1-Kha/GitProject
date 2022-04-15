@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    let a = prompt(" Nhập độ dài của mảng");
+    let c = "";
+    for (let i = 0; i < a && a < 11; i++) {
+        x[i] = parseInt(prompt("Nhập vào phần tử thứ" + i + "trong mảng "));
+    }
+    let V = parseInt(prompt("Nhập vào một số nguyên"));
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] === V) {
+            c = i;
+            for (let j = i; j < x.length; j++) {
+                x[j] = x[j+1];
+            }
+            x[x.length- 1] = 0;
+            break;
+        }
+    }
+    if (c === "") {
+        document.write("Số nguyên vừa nhập không thuộc mảng");
+    } else {
+        document.write("Các phần tử của mảng sau khi thay thế là ");
+        for (let i = 0; i < x.length;i ++){
+            document.write("" + x[i]);
+        }
+    }
+
+
+</script>
+</body>
+</html>
