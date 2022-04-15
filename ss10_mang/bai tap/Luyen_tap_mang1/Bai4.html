@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    let a = prompt(" Nhập độ dài của mảng");
+    for (let i = 0; i < a; i++) {
+        x[i] = parseInt(prompt("Nhập vào phần tử thứ" + i + "trong mảng "));
+    } document.write("Các phần tử đã nhập là: " + x + "<br/>");
+    let first = 0;
+    let last = x.length - 1;
+    while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write("Các phần tử sau khi đã đảo ngược là: " + x);
+
+</script>
+</body>
+</html>
