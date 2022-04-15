@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    let a = prompt(" Nhập độ dài của mảng");
+    for (let i = 0; i < a; i++) {
+        x[i] = parseInt(prompt("Nhập vào phần tử thứ" + i + "trong mảng "));
+    }
+    document.write("Các phần tử đã nhập là " + x + "<br/>");
+    for (let b = 0; b < x.length; b++) {
+        if (x[b] < 0) {
+            document.write("Các phần tử số nguyên âm là: " + x[b] + "<br/>");
+        }
+    }
+</script>
+</body>
+</html>
