@@ -17,19 +17,16 @@
         if (x[i] === V) {
             c = i;
             for (let j = i; j < x.length; j++) {
-                x[j] = x[j+1];
+                x[j] = x[j + 1];
             }
-            x[x.length- 1] = 0;
+            x[x.length - 1] = 0;
             break;
         }
     }
     if (c === "") {
         document.write("Số nguyên vừa nhập không thuộc mảng");
     } else {
-        document.write("Các phần tử của mảng sau khi thay thế là ");
-        for (let i = 0; i < x.length;i ++){
-            document.write("" + x[i]);
-        }
+        document.write("Các phần tử của mảng sau khi thay thế là " + x);
     }
 
 
