@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let x = parseInt(prompt("Nhập vào kích thước của mảng "));
+    for (i = 0; i < x; i++) {
+        a[i] = prompt("Nhập vào các phần tử thứ " + i + " của mảng");
+    }
+    let count = 0;
+    for (i = 0; i < x; i++) {
+        if (a[i] >= 0) {
+            count++;
+        }
+    }
+    document.write("Mảng vừa nhập có " + count + " số");
+</script>
+</body>
+</html>
