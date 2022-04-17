@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [];
+    let a = prompt(" Nhập độ dài của mảng");
+    for (let i = 0; i < a && a < 11; i++) {
+        x[i] = parseInt(prompt("Nhập vào phần tử thứ" + i + "trong mảng "));
+        if (a >= 11) {
+            alert("Bạn nhập sai độ dài mảng");
+        }
+    }
+    document.write("Các phần tử đã nhập là: " + x + "<br/>");
+    let V = parseInt(prompt("Nhập vào một số nguyên"));
+    for( j = 0; j < a; j++) {
+        if (V == x[j]) {
+            document.write("V is in the array");
+            break;
+        }
+    }
+    if (!(V == x[j])) {
+        document.write("V is not in the array");
+    }
+</script>
+</body>
+</html>

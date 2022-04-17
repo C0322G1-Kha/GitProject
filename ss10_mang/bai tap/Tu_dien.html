@@ -10,19 +10,33 @@
 <script>
     let anh = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
     let viet = ["thứ hai", "thứ ba", "thứ 4", "thứ 5", "thứ 6", "thứ bảy", "chủ nhật"];
+<<<<<<< HEAD
     let index= -1;
     function find() {
+=======
+    function searchh() {
+        let index = -1;
+        let a = document.getElementById("search").value;
+>>>>>>> e3e320258434b9602a61537cdbfa1ba92b508932
         for (let i = 0; i < anh.length; i++) {
-            let a = document.getElementById("search").value;
             if (a === anh[i]) {
                 index = i;
                 alert(viet[i]);
+                break;
             }
         }
+<<<<<<< HEAD
         if (a != anh[i]) {
             alert("Không tìm thấy");
         }
     }
+=======
+        if (index === -1) {
+            alert("Không tìm thấy");
+        }
+    }
+
+>>>>>>> e3e320258434b9602a61537cdbfa1ba92b508932
 </script>
 </body>
 </html>
