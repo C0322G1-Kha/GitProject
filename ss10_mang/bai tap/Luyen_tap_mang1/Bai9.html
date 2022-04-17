@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    let x = parseInt(prompt(" Nhập vào độ dài của mảng a"));
+    for (let i = 0; i < x; i++) {
+        a[i] = parseInt(prompt("Nhập vào phần tử thứ" + i));
+    }
+    document.write("Mảng a là " + a + "<br/>");
+    let y = parseInt(prompt("Nhập vào độ dài của mảng b"));
+    for (let i = 0; i < y; i++) {
+        b[i] = parseInt(prompt("Nhập vào các phần thử thứ " + i));
+    }
+    document.write("Mảng b là " + b + "<br/>");
+    for (let i = 0; i < y; i++) {
+        c[i] = b[i];
+        for (let j = 0; j < x; j++) {
+            c[x + j] = a[j];
+        }
+    }
+    document.write("Mảng c sau khi nối 2 mảng b và a là " + c);
+</script>
+</body>
+</html>
