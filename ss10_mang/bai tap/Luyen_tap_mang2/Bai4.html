@@ -7,8 +7,12 @@
 <body>
 <script>
     let a = "Thì ra mùa xuân hoa nở là vì em";
-    let b = "HTML".length;
-    document.write("Chuỗi có " + b + " kí tự");
+    let count= 0;
+    for (let i = 0;i < a.length; i++){
+        if (a[i]!== " " && a[i + 1] == " "){
+            count++;
+        }
+    }document.write("Số từ có trong chuỗi là " + (count + 1));
 </script>
 </body>
 </html>
