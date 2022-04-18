@@ -6,7 +6,12 @@
 </head>
 <body>
 <script>
-    let a = parseInt(prompt("Nhập vào 1 số "))
+    function square(a) {
+        Math.pow(a,2);
+        return Math.pow(a,2);
+    }
+    let a = parseInt(prompt("Nhập vào 1 số "));
+    alert("Bình phương của số a vừa nhập vào là " + square(a));
 </script>
 </body>
 </html>
