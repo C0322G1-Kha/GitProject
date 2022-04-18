@@ -8,17 +8,16 @@
 <script>
     let a = [];
     let x = parseInt(prompt("Nhập vào độ dài của mảng "));
-    for ( let i = 0; i < x; i++) {
+    for (let i = 0; i < x; i++) {
         a[i] = prompt("Nhập vào các kí tự có một vài phần tử có (-) ");
     }
+    for (let i = 0; i < x; i++) {
+        if (a[i] === "-") {
+            a[i] = "_";
+        }
+    }
     document.write("Mảng gồm các phần tử là " + a + "<br/>");
-    EM LÀM KHÔNG RA :( ÉT Ô ÉT
-    // for ( let j = 0; j < x; j++) {
-    //     if (a[j] === "_" && a[i] === "-") {
-    //         a[i] = a[j];
-    //         document.write("Mảng hiện tại là " + a[j]);
-    //     }
-    //     }
+    document.write("Mảng hiện tại là " + a[i]);
 </script>
 </body>
 </html>
