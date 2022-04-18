@@ -1,8 +1,0 @@
-BEGIN
-   	INPUT N < = 9
-	INPUT M
-	IF ( N=M )
-		DISPLAY "TRUE"
-	ELSE
-		DISPLAY "fALSE"
-END
