@@ -13,21 +13,14 @@
     let index = -1;
 
     function find() {
-        function searchh() {
-            let index = -1;
-            let a = document.getElementById("search").value;
-            for (let i = 0; i < anh.length; i++) {
-                if (a === anh[i]) {
-                    index = i;
-                    alert(viet[i]);
-                    break;
-                }
-            }
-            if (a != anh[i]) {
-                alert("Không tìm thấy");
+        let a = document.getElementById("search").value;
+        for (let i = 0; i < anh.length; i++) {
+            if (a === anh[i]) {
+                index = i;
+                alert(viet[i]);
+                break;
             }
         }
-
         if (index === -1) {
             alert("Không tìm thấy");
         }

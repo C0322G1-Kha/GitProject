@@ -8,12 +8,12 @@
 </body>
 <script>
     let a = parseInt(prompt("Nhập vào một số "));
-    function increase() {
+
+    function increase(a) {
         a = a + 1;
         return a;
     }
-    increase(a);
-    document.write("Kết quả là " + a);
 
+    document.write("Kết quả là " + increase(a));
 </script>
 </html>
