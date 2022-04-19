@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function swap(a, b) {
+        let c = a;
+        a = b;
+        b = c;
+        return a + "......" + b;
+    }
+    let a = parseInt(prompt("Nhập vào số nguyên a"));
+    let b = parseInt(prompt("Nhập vào số nguyên b"));
+    document.write("Hai số vừa nhập là : " + a + "......" + b + "<br/>");
+    document.write("Sau khi hoán đổi kết quả là : " + swap(a,b));
+</script>
+</body>
+</html>

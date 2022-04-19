@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let a = parseFloat(prompt("Nhập vào bán kính hình tròn "));
 
+    function acreage(a) {
+        return Math.pow(a, 2) * 3.14;
+    }
+
+    document.write("- Diện tích hình tròn là " + acreage(a) + "." + "<br/>");
+
+    function perimeter(a) {
+        return a * 2 * 3.14;
+    }
+
+    document.write("- Chu vi hình tròn là " + perimeter(a) + ".");
+</script>
 </body>
 </html>

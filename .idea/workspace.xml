@@ -20,7 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d9d5ac6-1ccb-4cfd-a1a4-1fae58a1b709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tao_trang_CV.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss10_mang/bai tap/Luyen_tap_mang1/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss10_mang/bai tap/Luyen_tap_mang1/Bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_ham/bai tap/Luyen_tap_tao_va_su_dung_ham_2/Bai2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,6 +72,8 @@
       <updated>1648802578874</updated>
       <workItem from="1648802581872" duration="1929000" />
       <workItem from="1648804533988" duration="1778000" />
+      <workItem from="1650341108126" duration="2743000" />
+      <workItem from="1650349326085" duration="7555000" />
     </task>
     <servers />
   </component>
@@ -78,5 +91,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1650341784737">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1650341784737" />
   </component>
 </project>

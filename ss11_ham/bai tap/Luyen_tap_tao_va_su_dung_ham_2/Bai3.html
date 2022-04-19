@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào số nguyên dương "));
+
+    function factorial(a) {
+        let factorials = 1;
+        for (let i = a; i > 0; i--) {
+            factorials = factorials * i;
+        }
+        return factorials;
+    }
+
+    document.write("Giai thừa của số a vừa nhập là " + factorial(a));
+</script>
+</body>
+</html>
