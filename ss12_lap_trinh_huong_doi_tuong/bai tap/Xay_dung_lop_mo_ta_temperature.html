@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(valueC) {
+            this.valueC = valueC;
+        }
+
+        getValueC() {
+            return this.valueC;
+        }
+
+        cChangeF() {
+            if (this.valueC > -273) {
+                return (this.valueC * 1.8) + 32;
+            }
+        }
+
+        cChangeK() {
+            if (this.valueC > -273) {
+                return this.valueC + 273.15;
+            }
+        }
+    }
+
+    let valueC = parseFloat(prompt("Nhập vào độ C "));
+    let temperature = new Temperature(valueC);
+    temperature.getValueC();
+    document.write("Độ C vừa nhập là: " + valueC + "<br/>");
+    let f = temperature.cChangeF(valueC);
+    let k = temperature.cChangeK(valueC);
+    document.write("Độ C chuyển sang độ F là: " + f + "<br/>");
+    document.write("Độ C chuyển sang độ K là: " + k + "<br/>");
+
+</script>
+</body>
+</html>

@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d9d5ac6-1ccb-4cfd-a1a4-1fae58a1b709" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss12_lap_trinh_huong_doi_tuong/bai tap/Xay_dung_lop_mo_ta_temperature.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_lap_trinh_huong_doi_tuong/bai tap/Xay_dung_lop_mo_ta_hinh_chu_nhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_lap_trinh_huong_doi_tuong/bai tap/Xay_dung_lop_mo_ta_hinh_chu_nhat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <workItem from="1650504400576" duration="364000" />
       <workItem from="1650510429485" duration="6139000" />
       <workItem from="1650522655565" duration="10562000" />
-      <workItem from="1650548980954" duration="1525000" />
+      <workItem from="1650548980954" duration="4010000" />
     </task>
     <servers />
   </component>
