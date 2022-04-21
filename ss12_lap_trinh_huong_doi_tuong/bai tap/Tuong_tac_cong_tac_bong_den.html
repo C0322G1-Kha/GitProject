@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class SwitchButton {
+        constructor(status) {
+            this.status = status;
+        }
+        setButton(status){
+            this.status = status;
+        }
+        getButton(){
+            return this.status;
+    }
+    }
+    class ElectricLamp {
+        constructor(lamp) {
+            this.lamp = lamp ;
+        }
+        setLamp (lamp){
+            this.lamp= lamp;
+        }
+        getLamp (){
+            return this.lamp.getButton();
+        }
+        light(){
+            if (this.status)
+        }
+    }
+</script>
+</body>
+</html>

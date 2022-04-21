@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(mass) {
+            this.mass = mass;
+        }
+
+        setMass(mass) {
+            this.mass = mass;
+        }
+
+        getMass() {
+            return this.mass;
+        }
+
+        decreaseMass() {
+            if (this.mass > 0){
+            this.mass--;
+        }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight, say) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+            this.say = say;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setApple(apple) {
+            this.apple = apple;
+        }
+
+        getApple() {
+            return this.apple.getMass();
+        }
+
+        hShot() {
+            if (this.status) {
+                this.weight++;
+                document.write(this.name + "&nbsp" + this.gender + "&nbsp" + "say: " + this.say);
+            }
+        }
+
+        oneShot() {
+            this.status = true;
+            return this.apple.decreaseMass();
+        }
+    }
+
+    let adam = new Human("Adam", "Male", 60, "ăn đi em. ");
+    let eva = new Human("Eva", "Female", 50, "em đang ăn. ");
+    let apple = new Apple();
+    apple.setMass(10);
+    adam.setApple(apple);
+    eva.setApple(apple);
+    for ( let i = 0 ; i < 10/2 ; i ++){
+        adam.oneShot();
+        adam.hShot();
+        document.write(" Nặng: " + adam.getWeight() + " Táo nặng: " + adam.getApple() + "<br/>" );
+        eva.oneShot();
+        eva.hShot();
+        document.write(" Nặng: " + eva.getWeight() + " Táo nặng: " + eva.getApple() + "<br/>" +"<hr>");
+    }
+
+
+
+</script>
+</body>
+</html>

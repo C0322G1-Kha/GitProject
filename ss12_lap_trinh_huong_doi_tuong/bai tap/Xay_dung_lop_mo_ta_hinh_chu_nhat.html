@@ -11,16 +11,20 @@ class Rectangle{
         this.long = long ;
         this.wide = wide;
     }
-    getLongWide (long, wide){
+    getLongWide (){
         return this.long + "/" + this.wide;
     }
     acreage (){
-        return long * wide;
+        return this.long * this.wide;
     }
     premiter(){
-        return (long +wide) * 2;
+        return (this.long + this.wide) * 2;
     }
-} let acreage = new Rectangle()
+} let rectangle = new Rectangle();
+    alert(rectangle.getLongWide());
+    let acreage1 = Rectangle.acreage();
+    let premiter1 = Rectangle.premiter();
+    alert("Diện tích là " + acreage1 + "<br/>" + "Chu vi là " + premiter1);
 </script>
 </body>
 </html>
