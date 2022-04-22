@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9d9d5ac6-1ccb-4cfd-a1a4-1fae58a1b709" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="9d9d5ac6-1ccb-4cfd-a1a4-1fae58a1b709" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_lap_trinh_huong_doi_tuong/bai tap/Tuong_tac_cong_tac_bong_den.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_lap_trinh_huong_doi_tuong/bai tap/Tuong_tac_cong_tac_bong_den.html" afterDir="false" />
+    </list>
+>>>>>>> 0e3742e4f15ef0764895a95b62ff497813169ae7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +74,11 @@
       <workItem from="1650504400576" duration="364000" />
       <workItem from="1650510429485" duration="6139000" />
       <workItem from="1650522655565" duration="10562000" />
+<<<<<<< HEAD
       <workItem from="1650591028468" duration="204000" />
+=======
+      <workItem from="1650548980954" duration="14574000" />
+>>>>>>> 0e3742e4f15ef0764895a95b62ff497813169ae7
     </task>
     <servers />
   </component>
@@ -87,13 +98,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="339" y="162" key="run.anything.popup" timestamp="1650439389759">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="417" y="225" key="run.anything.popup" timestamp="1650561397448">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1650439389759" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1650439388295">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="417" y="225" key="run.anything.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1650561397448" />
+    <state x="426" y="68" width="827" height="941" key="search.everywhere.popup" timestamp="1650561395398">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1650439388295" />
+    <state x="426" y="68" width="827" height="941" key="search.everywhere.popup/0.0.1680.1010@0.0.1680.1010" timestamp="1650561395398" />
   </component>
 </project>

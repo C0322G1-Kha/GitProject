@@ -20,11 +20,14 @@ class Rectangle{
     premiter(){
         return (this.long + this.wide) * 2;
     }
-} let rectangle = new Rectangle();
-    alert(rectangle.getLongWide());
-    let acreage1 = Rectangle.acreage();
-    let premiter1 = Rectangle.premiter();
-    alert("Diện tích là " + acreage1 + "<br/>" + "Chu vi là " + premiter1);
+}let long = parseInt(prompt("Nhập vào chiều dài hình chữ nhật "));
+let wide = parseInt(prompt("Nhập vào chiều rộng hình chữ nhật "));
+let rectangle = new Rectangle(long,wide);
+    rectangle.getLongWide();
+
+    let acreage1 = rectangle.acreage(long,wide);
+    let premiter1 = rectangle.premiter(long,wide);
+    alert("Diện tích là " + acreage1 + " \nChu vi là " + premiter1);
 </script>
 </body>
 </html>
