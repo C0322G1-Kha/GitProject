@@ -6,7 +6,29 @@
 </head>
 <body>
 <script>
-
+    let words = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"];
+    let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let num;
+    do {
+        num = prompt("Nhập vào một số bất kì");
+        if (num >= 0) {
+            break;
+        } else {
+            alert("Bạn nhập sai vui lòng nhập lại");
+        }
+    }
+    while (true) ;
+    let arr = num.split("");
+    let str = "";
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < numbers.length; j++) {
+            if (parseInt(arr[i]) === numbers[j]) {
+                str += words[j] + " ";
+            }
+        }
+    }
+    document.write("Các só vừa nhập là " + num + "." + "<br/>");
+    document.write("Số vừa nhập dạng chữ là " + str + ".");
 </script>
 </body>
 </html>

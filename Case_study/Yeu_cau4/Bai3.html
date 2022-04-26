@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập vào xâu các kí tự ");
+    let string1 = prompt(" Nhập vào xâu các kí tự");
+    let count = 0;
+    document.write("Xâu đầu tiên nhập vào là " + string + "<br/>");
+    document.write("Xâu thứ hai nhập vào là " + string1 + "<br/>");
+    for (let i = 0; i < string.length; i++) {
+        for (let j = 0; j < string1.length; j++) {
+            if (string[i] === string1[j]) {
+                string1 = string1.replace(string1[j],"");
+                count++;
+                break;
+            }
+        }
+    }
+    document.write("Số lượng các ký tự trùng nhau là " + count);
+</script>
+</body>
+</html>
