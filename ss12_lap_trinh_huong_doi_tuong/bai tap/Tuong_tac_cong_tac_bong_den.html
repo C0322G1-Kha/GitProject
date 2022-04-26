@@ -18,17 +18,18 @@
 
         turnOn() {
             this.status = true;
+            document.write("Đèn sáng" + "<br/>");
         }
 
         turnOff() {
             this.status = false;
+            document.write("Đèn tắt" + "<br/>");
         }
     }
 
     class SwitchButton {
-        constructor(status,lamp) {
+        constructor(status) {
             this.status = status;
-            this.lamp = lamp;
         }
 
         getStatus() {
@@ -49,8 +50,8 @@
 
     }
 
-    let lamp = new ElectricLamp(true);
-    let switchButton = new SwitchButton(true);
+    let lamp = new ElectricLamp(false);
+    let switchButton = new SwitchButton(false);
     switchButton.connectToLamp(lamp);
     for (let i = 0; i < 10; i++) {
         if (switchButton.getStatus() === true) {
@@ -61,7 +62,7 @@
             switchButton.lamp.turnOn();
         }
     }
-    document.write("Trạng thái của bóng đèn hiện tại là " + switchButton.lamp.getStatus());
+    document.write("Trạng thái bóng đèn hiện tại là " + switchButton.lamp.getStatus());
 
 </script>
 </body>

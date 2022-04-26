@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập các kí tự cần kiểm tra");
+
+    let arr = [];
+    for (let i = 0; i < str.length ; i++) {
+        if (arr.indexOf(str[i]) === -1) {
+            arr.push(str[i]);
+        }
+    }
+    document.write("Các kí tự khác nhau " + arr + "<br/>");
+    document.write("Số lượng kí tự khác nhau trong xâu: " + arr.length);
+</script>
+</body>
+</html>

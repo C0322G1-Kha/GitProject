@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhập vào kích thước dòng m "));
+    let n = parseInt(prompt("Nhập vào kích thước cột n"));
+    let sum = 0;
+    let arr = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = parseInt(prompt("Nhập vào phần tử dòng " + i + " cột " + j));
+            document.write(arr[i][j] + " ");
+        } document.write("<br/>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] % 2 === 0) {
+                sum += arr[i][j];
+            }
+        }
+    }
+    document.write("<br/>" + "Tổng các số chẵn trong mảng là " + sum);
+</script>
+</body>
+</html>

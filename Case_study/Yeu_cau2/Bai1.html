@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary;
+    let tax;
+    let netSalary;
+    do {
+        salary = parseInt(prompt("Nhập tổng lương nhân viên "));
+        if ( salary > 0 ){
+            break;
+        } else {
+            alert("Nhập sai vui lòng nhập lại ");
+        }
+    } while (true);
+    if ( salary >= 15000000){
+        tax = 20;
+        netSalary = salary - (salary * tax) / 100;
+    } else if ( salary >= 7000000){
+        tax = 10;
+        netSalary = salary - (salary * tax) / 100;
+    } else {
+        tax = 5;
+        netSalary = salary - (salary * tax) / 100;
+    }
+    document.write("Lương ròng của nhân viên là: " + netSalary);
+</script>
+</body>
+</html>

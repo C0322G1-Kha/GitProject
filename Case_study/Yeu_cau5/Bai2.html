@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let arr = [
+        [7, 2, 9, 17],
+        [19, 21, 22, 35],
+        [26, 32, 27, 18]
+    ];
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            document.write(arr[i][j] + " ");
+        }
+        document.write("<br>");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (isPrime(arr[i][j])) {
+                count++;
+                document.write(arr[i][j] + " ");
+            }
+        }
+    }document.write(" là các số nguyên tố trong mảng. ");
+    document.write("<br>Mảng có " + count + " số nguyên tố");
+
+</script>
+</body>
+</html>
