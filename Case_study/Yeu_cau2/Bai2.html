@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    Kiểm tra chữ cái nhập vào có phải nguyên âm hay không-->
+</head>
+<body>
+<script>
+    let vowel = ["u", "e", "o", "a", "i", "U", "E", "O", "A", "I"];
+    let flag = false;
+    let word = prompt("Nhập vào chữ cái bất kỳ thuộc bảng chữ cái tiếng Anh ");
+    for (let i = 0; i < vowel.length; i++) {
+        if (word === vowel[i]) {
+            flag = true;
+            break;
+        }
+    }
+    if (flag){
+        alert("Chữ cái vừa nhập là nguyên âm ");
+        } else {
+        alert("Chữ cái vừa nhập là phụ âm ");
+    }
+</script>
+</body>
+</html>

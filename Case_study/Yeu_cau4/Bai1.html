@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--Chuẩn hóa xâu kí tự -->
 </head>
 <body>
 <script>
-    let str = prompt("Nhập vào xâu kí tự ");
-    let arr = [];
-    for (let i = 0; i < str.length; i++){
-        if (arr.indexOf(str[i])=== -1){
-            arr.push(str[i]);
+    let a = prompt("nhập xâu ký tự muốn chuẩn hoá");
+    let b ;
+    let string = [];
+    let x ;
+    b = a.toLowerCase().split(" ");
+    document.write("Xâu kí tự chữ thường là " + b + "<br/>")
+
+    function fix(str) {
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < str[i].length; j++) {
+                if (j === 0) {
+                    x = str[i][0].toUpperCase();
+                    string.push(" ");
+                    string.push(x);
+                    continue;
+                }
+                string.push(str[i][j]);
+            }
         }
-    } document.write("Các kí tự khác nhau là " + arr + "<br/>");
-    document.write("Có " + arr.length + " kí tự khác nhau ");
+    }
+
+    function longest(str) {
+        let max = str[0].length;
+        let index = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i].length > max) {
+                max = str[i].length;
+                index = i;
+            }
+        }
+        document.write("<br/>" + "Từ dài nhất trong xâu : " + str[index]);
+    }
+
+    fix(b);
+    document.write(" Xâu kí tự sau khi chuẩn hóa là " + string.join(""));
+    longest(b);
 </script>
 </body>
 </html>

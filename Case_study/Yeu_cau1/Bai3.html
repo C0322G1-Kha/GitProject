@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    Vẽ tam giác cân đặc-->
+</head>
+<body>
+<script>
+    let h = parseInt(prompt("Nhập vào chiều cao của tam giác cân"));
+    for (let i = 1; i <= h; i++) {
+        for (let k = h; k > i; k--) {
+            document.write("&nbsp;&nbsp");
+        }
+        for (let j = 1; j <= i * 2 - 1; j++) {
+            document.write("*");
+        }
+        document.write("<br/>");
+    }
+</script>
+</body>
+</html>

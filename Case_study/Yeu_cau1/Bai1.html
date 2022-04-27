@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+<!--    Vẽ hình chữ nhật rỗng-->
 </head>
 <body>
 <script>
-    for (let i = 1; i <= 4; i++) {
-        for (let j = 1; j <= 5; j++) {
-            if (i > 1 && i < 4 && j > 1 && j < 5) {
+    let m = parseInt(prompt("Nhập vào chiều dài hcn "));
+    let n = parseInt(prompt("Nhập vào chiều rộng hcn "));
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= m; j++) {
+            if (i > 1 && i < n && j > 1 && j < m) {
                 document.write("&nbsp;&nbsp");
             } else {
                 document.write("*");
