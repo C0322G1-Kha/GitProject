@@ -3,46 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--Chuẩn hóa xâu kí tự -->
+    <!--Chuẩn hóa xâu kí tự -->
 </head>
 <body>
 <script>
-    let a = prompt("nhập xâu ký tự muốn chuẩn hoá");
-    let b ;
-    let string = [];
-    let x ;
-    b = a.toLowerCase().split(" ");
-    document.write("Xâu kí tự chữ thường là " + b + "<br/>")
-
-    function fix(str) {
-        for (let i = 0; i < str.length; i++) {
-            for (let j = 0; j < str[i].length; j++) {
-                if (j === 0) {
-                    x = str[i][0].toUpperCase();
-                    string.push(" ");
-                    string.push(x);
-                    continue;
+    // let a = prompt("nhập xâu ký tự muốn chuẩn hoá");
+    // let b ;
+    // let string = [];
+    // let x ;
+    // b = a.toLowerCase().split(" ");
+    // document.write("Xâu kí tự chữ thường với 1 khoảng cách là 1 dấu phẩy(,) : " + b + "<br/>")
+    //
+    // function fix(str) {
+    //     for (let i = 0; i < str.length; i++) {
+    //         for (let j = 0; j < str[i].length; j++) {
+    //             if (j === 0) {
+    //                 x = str[i][0].toUpperCase();
+    //                 string.push(" ");
+    //                 string.push(x);
+    //                 continue;
+    //             }
+    //             string.push(str[i][j]);
+    //         }
+    //     }
+    // }
+    //
+    // function longest(str) {
+    //     let max = str[0].length;
+    //     let index = 0;
+    //     for (let i = 0; i < str.length; i++) {
+    //         if (str[i].length > max) {
+    //             max = str[i].length;
+    //             index = i;
+    //         }
+    //     }
+    //     document.write("<br/>" + "Từ dài nhất trong xâu : " + str[index]);
+    // }
+    //
+    // fix(b);
+    // document.write(" Xâu kí tự sau khi chuẩn hóa là " + string.join(""));
+    // longest(b);
+    function fix(name) {
+        name = name.trim().toLowerCase();
+        let nameArray = Array.from(name);
+        for (let i = 0; i < nameArray.length - 1; i++) {
+            if (nameArray[i] === " " && nameArray[i + 1] === " ") {
+                for (let j = i + 1; j < nameArray.length - 1; j++) {
+                    nameArray[j] = nameArray[j + 1];
                 }
-                string.push(str[i][j]);
+                i--;
+                nameArray.pop();
             }
         }
-    }
-
-    function longest(str) {
-        let max = str[0].length;
-        let index = 0;
-        for (let i = 0; i < str.length; i++) {
-            if (str[i].length > max) {
-                max = str[i].length;
-                index = i;
+        nameArray[0] = nameArray[0].toUpperCase();
+        for (let i = 0; i < nameArray.length - 1; i++) {
+            if (nameArray[i] === " ") {
+                nameArray[i + 1] = nameArray[i + 1].toUpperCase();
             }
         }
-        document.write("<br/>" + "Từ dài nhất trong xâu : " + str[index]);
+        return nameArray.join("");
     }
 
-    fix(b);
-    document.write(" Xâu kí tự sau khi chuẩn hóa là " + string.join(""));
-    longest(b);
+    function longest(name) {
+        let arrName = name.split(" ");
+        let maxName = arrName[0];
+        for (let i = 1; i < arrName.length; i++) {
+            if (maxName.length < arrName[i].length) {
+                maxName = arrName[i];
+            }
+        }
+        return maxName;
+    }
+
+    let name = prompt("Nhập vào tên cần chuẩn hóa: ");
+    alert("Tên ban đầu " + name + "\n Tên chuẩn hóa " + fix(name) + "\n Tên có độ dài nhất là " + longest(fix(name)));
 </script>
 </body>
 </html>

@@ -20,15 +20,13 @@
     } while (true);
     if ( salary >= 15000000){
         tax = 20;
-        netSalary = salary - (salary * tax) / 100;
     } else if ( salary >= 7000000){
         tax = 10;
-        netSalary = salary - (salary * tax) / 100;
     } else {
         tax = 5;
-        netSalary = salary - (salary * tax) / 100;
     }
-    document.write("Lương ròng của nhân viên là: " + netSalary);
+    netSalary = salary - salary * tax / 100;
+    document.write("Lương ròng của nhân viên là: " + netSalary + "VNĐ");
 </script>
 </body>
 </html>

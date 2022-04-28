@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--    Vẽ tam giác vuông rỗng-->
+<!--    Vẽ tam giác vuông cân rỗng-->
 </head>
 <body>
 <script>
     let h = parseInt(prompt("Nhập chiều cao của tam giác vuông"));
     for (let i = 1; i <= h; i++) {
-        for (let j = 1; j <= i; j++) {
+        for (let j = 0; j <= h; j++) {
             if (j === 1 || i === h || j === i) {
                 document.write("*");
             } else {

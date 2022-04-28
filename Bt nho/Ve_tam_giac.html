@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tam giác vuông cân rỗng góc vuông trên góc nhọn dưới trái
+    let n = parseInt(prompt("Nhập vào chiều cao tam giác "));
+    // for (let i = 1; i <= n; i++) {
+    //     for (let j = n; j >= i; j--) {
+    //         if (i === 1 || j === n || j === i) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp;&nbsp;");
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    // Tam giác vuông cân rỗng góc vuông trên góc nhọn dưới phải
+    // for (let i = 1; i <= n; i++) {
+    //     for (let j = n; j >= i; j--) {
+    //         if (i === 1 || j === n || j === i ) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp;&nbsp;");
+    //         }
+    //     }
+    //     document.write("<br>");
+    //     for (let k = 1; k <= i; k++) {
+    //         document.write("&nbsp;&nbsp;");
+    //     }
+    // }
+    for (let i = 1; i <= n; i++) {
+        for (let k = n; k > i; k--) {
+            document.write("&nbsp;&nbsp;");
+        }
+        for (let j = 1; j <= i; j++) {
+            if (j === 1 || i === n || j === i) {
+                document.write("*");
+            } else {
+                document.write("&nbsp;&nbsp;");
+            }
+        }
+        document.write("<br>");
+    }
+
+</script>
+</body>
+</html>

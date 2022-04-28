@@ -5,6 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let menu = "Mời bạn chọn thức uống \n" +
+        "1.Cafe \n" +
+        "2.Cam vắt \n" +
+        "3.Nước ép cà rốt \n" +
+        "4.Nước ép cà chua \n" +
+        "5.Nước lọc \n" +
+        "6.Nước dừa \n" +
+        "7.Thoát gọi món ";
+    let choose;
+    let total = 0;
+    do {
+        choose = parseInt(prompt(menu));
+        let amount = 0;
+        let price = 0;
+        switch (choose) {
+            case 1:
+                price = 10000;
+                break;
+            case 2:
+                price = 15000;
+                break;
+            case 3:
+                price = 15000;
+                break;
+            case 4:
+                price = 15000;
+                break;
+            case 5:
+                price = 7000;
+                break;
+            case 6:
+                price = 15000;
+                break;
+            case 7:
+                continue;
+        }
+        amount = parseInt(prompt("Nhập vào số lượng món bạn chọn"));
+        total += amount * price;
+    } while (choose !== 7);
+    alert("Tổng số tiền bạn phải trả là " + total);
+</script>
 </body>
 </html>
